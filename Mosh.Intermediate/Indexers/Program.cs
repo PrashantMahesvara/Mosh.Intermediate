@@ -33,9 +33,6 @@ namespace Indexers
         //{
 
         //}
-
-
-
     }
 
     class Program

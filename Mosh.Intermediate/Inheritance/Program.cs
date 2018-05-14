@@ -40,8 +40,6 @@ namespace Inheritance
             var text = new Text();
             text.Width = 100;
             text.Copy();
-
-
         }
     }
 }
