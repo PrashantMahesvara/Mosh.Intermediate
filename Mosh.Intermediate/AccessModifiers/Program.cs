@@ -9,6 +9,12 @@ namespace AccessModifiers
     public class Person
     {
         private DateTime _birthdate;
+        
+        //inaccessable using this
+        //private void SetBirthdate(DateTime birthdate)
+        //{
+        //    _birthdate = birthdate;
+        //}
 
         public void SetBirthdate(DateTime birthdate)
         {
@@ -25,9 +31,11 @@ namespace AccessModifiers
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             var person = new Person();
             person.SetBirthdate(new DateTime(1982, 1, 1));
             Console.WriteLine(person.GetBirthdate());
+            Console.ReadKey();
         }
     }
 }
